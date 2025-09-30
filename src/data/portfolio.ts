@@ -1,0 +1,209 @@
+export interface Contact {
+  email: string
+  phone: string
+  linkedin: string
+  github: string
+}
+
+export interface Education {
+  degree: string
+  specialization?: string
+  institution: string
+  period: string
+}
+
+export interface WorkExperience {
+  title: string
+  company: string
+  period: string
+  description: string[]
+}
+
+export interface Skills {
+  languages: string[]
+  frameworks: string[]
+  backend: string[]
+  testing: string[]
+  libraries: string[]
+  services: string[]
+}
+
+export interface Project {
+  name: string
+  description: string
+  technologies?: string[]
+  link?: string
+  image?: string
+}
+
+export interface Language {
+  [key: string]: string
+}
+
+export interface PortfolioData {
+  name: string
+  title: string
+  contact: Contact
+  education: Education[]
+  work_experience: WorkExperience[]
+  skills: Skills
+  projects: Project[]
+  organizations: string[]
+  languages: Language
+  interests: string[]
+}
+
+export const portfolioData: PortfolioData = {
+  name: "Taher Said",
+  title: "Full Stack Developer",
+  contact: {
+    email: "saidtaher051@gmail.com",
+    phone: "938179061",
+    linkedin: "https://www.linkedin.com/in/taher-said",
+    github: "https://github.com/TaherSaid"
+  },
+  education: [
+    {
+      degree: "Master's degree in Information Management System",
+      specialization: "Business Intelligence",
+      institution: "NOVA IMS Information Management School of Lisbon",
+      period: "2024 - Present"
+    },
+    {
+      degree: "Bachelor's Degree in Computer Science",
+      institution: "Higher Institute of Technological Studies of Bizerte",
+      period: "2018 - 2021"
+    }
+  ],
+  work_experience: [
+    {
+      title: "Full Stack Developer",
+      company: "Xtech",
+      period: "01/2022 - 06/2025",
+      description: [
+        "Leading mobile UI development for Ostro, a cross-platform React Native app.",
+        "Worked on Enquee, a Slack-based survey platform, handling frontend and backend integration.",
+        "Contributed to Sorpetaler website using React, Gatsby, and Astro.",
+        "Created reusable UI components shared across projects.",
+        "Built backend APIs with Node.js and AWS (Lambda, Amplify, DynamoDB, Cognito).",
+        "Participated in Agile Scrum processes: standups, sprint planning, retrospectives, and code reviews.",
+        "Collaborated with stakeholders for requirements and scalable solutions."
+      ]
+    },
+    {
+      title: "End of Studies Project",
+      company: "Tekonsult",
+      period: "03/2021 - 07/2021",
+      description: [
+        "Built a school platform to manage courses and track student attendance."
+      ]
+    },
+    {
+      title: "End of Studies Project",
+      company: "Asteelflash",
+      period: "02/2018 - 06/2018",
+      description: [
+        "Designed a machine to facilitate connection of wires to a socket.",
+        "Collaborated with Lean department to streamline processes and optimize efficiency."
+      ]
+    }
+  ],
+  skills: {
+    languages: [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "TypeScript",
+      "PHP"
+    ],
+    frameworks: [
+      "React",
+      "Next.js",
+      "Gatsby",
+      "Astro",
+      "React Native",
+      "Symfony",
+      "Express"
+    ],
+    backend: [
+      "Node.js",
+      "GraphQL",
+      "REST",
+      "AWS Amplify"
+    ],
+    testing: [
+      "Jest",
+      "React Testing Library"
+    ],
+    libraries: [
+      "Ant Design",
+      "UI Kitten",
+      "Formik",
+      "Yup",
+      "Storybook",
+      "Contentful",
+      "SlackAPI"
+    ],
+    services: [
+      "ConfigCat",
+      "Stripe",
+      "Hotjar",
+      "Sentry",
+      "MailChimp",
+      "Contentful",
+      "WordPress"
+    ]
+  },
+  projects: [
+    {
+      name: "Mobile Application Bac Tunisie",
+      description: "Repository of previous examination papers for student preparation.",
+      technologies: ["React Native", "Node.js", "MongoDB"]
+    },
+    {
+      name: "Order Dashboard",
+      description: "Platform for restaurants to manage daily product orders efficiently.",
+      technologies: ["React", "Node.js", "Express", "MongoDB"]
+    },
+    {
+      name: "Keys Manager",
+      description: "Manage company user data in non-relational DB with scheduled backups.",
+      technologies: ["Node.js", "AWS DynamoDB", "AWS Lambda"]
+    },
+    {
+      name: "Innovative Diabetes Monitoring and Management Solution",
+      description: "App with advanced measurement monitoring and graphical health tracking.",
+      technologies: ["React Native", "Node.js", "GraphQL", "AWS"]
+    },
+    {
+      name: "Ostro",
+      description: "Cross-platform React Native mobile application with advanced UI components.",
+      technologies: ["React Native", "UI Kitten", "AWS"]
+    },
+    {
+      name: "Enquee",
+      description: "Slack-based survey platform with frontend and backend integration.",
+      technologies: ["React", "Node.js", "SlackAPI", "AWS"]
+    },
+    {
+      name: "Sorpetaler",
+      description: "Modern website built with React, Gatsby, and Astro for optimal performance.",
+      technologies: ["React", "Gatsby", "Astro", "Contentful"]
+    }
+  ],
+  organizations: [
+    "Robotics Club Iset Bizerte (2015 - 2018)",
+    "JCI El Alia (2018 - 2019)",
+    "Club Jeune Science El Alia (2019 - 2021)"
+  ],
+  languages: {
+    "Arabic": "Native or Bilingual",
+    "French": "Full Professional",
+    "English": "Full Professional"
+  },
+  interests: [
+    "Playing Padel",
+    "Listening to music",
+    "Cooking"
+  ]
+}

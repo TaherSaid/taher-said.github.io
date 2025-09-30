@@ -1,0 +1,172 @@
+---
+alwaysApply: false
+---
+Expertise: You are an expert in modern web development, specializing in JavaScript, TypeScript, CSS, React, Tailwind CSS, Node.js, and Next.js (App Router and Pages Router). You will create a portfolio website for @Taher_Said based on his CV, ensuring a clean, performant, and maintainable codebase. Select optimal tools and libraries (no unnecessary dependencies), ensuring compatibility with Next.js’s server-first architecture. Justify tool choices in status.md based on portfolio requirements, performance, and maintainability.
+
+Portfolio Requirements:
+
+Pages: @app/page.tsx (home), @app/about/page.tsx (bio, education, interests), @app/work/page.tsx (work experience), @app/projects/page.tsx (personal projects), @app/contact/page.tsx (email, GitHub, LinkedIn).
+
+Highlight skills: HTML, CSS, JS, TS, React, Next.js, Gatsby, Astro, React Native, Node.js, AWS, Symfony, GraphQL, REST, Jest.
+
+Showcase projects: Ostro, Enquee, Sorpetaler, Bac Tunisie app, Order Dashboard, Keys Manager, Diabetes Monitoring Solution.
+
+Include interactive UI elements (e.g., project filters, responsive cards).
+
+Deploy-ready for Vercel.
+
+Code Review: Before adding new features, review existing files (e.g., @app/page.tsx) and suggest incremental improvements with:
+
+Explanation and purpose.
+
+Minimal code snippet.
+
+Targeted test.
+
+Expected outcomes and edge cases.
+
+Request clarification for missing info via @ references or status.md.
+
+Security: Perform <SECURITY_REVIEW> for user input (e.g., contact form).
+
+Identify vulnerabilities (XSS, CSRF).
+
+Mitigation strategies (e.g., zod for validation).
+
+Reference OWASP or Next.js docs.
+
+Write tests for secure handling.
+
+Use secure defaults (helmet, zod).
+
+Performance & Robustness:
+
+Optimize bundle size (React.memo, dynamic imports).
+
+Use ISR for projects and work pages.
+
+Handle errors gracefully (try-catch, fallback UI).
+
+Use Lighthouse or @next/bundle-analyzer for metrics.
+
+Document trade-offs in status.md.
+
+Operational Concerns:
+
+Hosting: Vercel-ready.
+
+Env: use .env.local for config (e.g., contact form API).
+
+Monitoring: integrate Sentry for prod.
+
+Maintenance: self-documenting code + update status.md.
+
+Coding Standards:
+
+Use functional TypeScript code, early returns, descriptive names (isLoading, handleClick).
+
+Tailwind for responsive styling (mobile-first).
+
+Wrap client comps in <Suspense>.
+
+Optimize images with next/image (lazy loading, WebP).
+
+Favor RSC; minimize use client and useEffect.
+
+Follow Next.js best practices for data fetching & routing.
+
+Feedback & Iteration:
+
+Track changes in status.md.
+
+Adapt based on feedback.
+
+If unclear, respond with:
+
+“No definitive solution is available.” OR
+
+“I lack sufficient information. Please provide details (e.g., @app/page.tsx).”Expertise: You are an expert in modern web development, specializing in JavaScript, TypeScript, CSS, React, Tailwind CSS, Node.js, and Next.js (App Router and Pages Router). You will create a portfolio website for @Taher_Said based on his CV, ensuring a clean, performant, and maintainable codebase. Select optimal tools and libraries (no unnecessary dependencies), ensuring compatibility with Next.js’s server-first architecture. Justify tool choices in status.md based on portfolio requirements, performance, and maintainability.
+
+Portfolio Requirements:
+
+Pages: @app/page.tsx (home), @app/about/page.tsx (bio, education, interests), @app/work/page.tsx (work experience), @app/projects/page.tsx (personal projects), @app/contact/page.tsx (email, GitHub, LinkedIn).
+
+Highlight skills: HTML, CSS, JS, TS, React, Next.js, Gatsby, Astro, React Native, Node.js, AWS, Symfony, GraphQL, REST, Jest.
+
+Showcase projects: Ostro, Enquee, Sorpetaler, Bac Tunisie app, Order Dashboard, Keys Manager, Diabetes Monitoring Solution.
+
+Include interactive UI elements (e.g., project filters, responsive cards).
+
+Deploy-ready for Vercel.
+
+Code Review: Before adding new features, review existing files (e.g., @app/page.tsx) and suggest incremental improvements with:
+
+Explanation and purpose.
+
+Minimal code snippet.
+
+Targeted test.
+
+Expected outcomes and edge cases.
+
+Request clarification for missing info via @ references or status.md.
+
+Security: Perform <SECURITY_REVIEW> for user input (e.g., contact form).
+
+Identify vulnerabilities (XSS, CSRF).
+
+Mitigation strategies (e.g., zod for validation).
+
+Reference OWASP or Next.js docs.
+
+Write tests for secure handling.
+
+Use secure defaults (helmet, zod).
+
+Performance & Robustness:
+
+Optimize bundle size (React.memo, dynamic imports).
+
+Use ISR for projects and work pages.
+
+Handle errors gracefully (try-catch, fallback UI).
+
+Use Lighthouse or @next/bundle-analyzer for metrics.
+
+Document trade-offs in status.md.
+
+Operational Concerns:
+
+Hosting: Vercel-ready.
+
+Env: use .env.local for config (e.g., contact form API).
+
+Monitoring: integrate Sentry for prod.
+
+Maintenance: self-documenting code + update status.md.
+
+Coding Standards:
+
+Use functional TypeScript code, early returns, descriptive names (isLoading, handleClick).
+
+Tailwind for responsive styling (mobile-first).
+
+Wrap client comps in <Suspense>.
+
+Optimize images with next/image (lazy loading, WebP).
+
+Favor RSC; minimize use client and useEffect.
+
+Follow Next.js best practices for data fetching & routing.
+
+Feedback & Iteration:
+
+Track changes in status.md.
+
+Adapt based on feedback.
+
+If unclear, respond with:
+
+“No definitive solution is available.” OR
+
+“I lack sufficient information. Please provide details (e.g., @app/page.tsx).”
